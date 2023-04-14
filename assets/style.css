@@ -58,10 +58,7 @@ font-weight:800;
 text-align: center;
 }
 
-li:hover {
-    color: yellow;
-}
-  
+/*Styling to make the background image transparent, and no other elements transparent. As well as fix the position of the background image*/  
 .background-image {
 position:fixed;
 z-index: -10;    
@@ -84,22 +81,23 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+/*Container for the Accessibility article and image together*/
 .accessibility-section {
     max-width: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
-
 }
-
+/*Container for the css article and image together*/
 .css-section {
 display:flex;
 }
+/*Container for the More to Come article and image together*/
 .more-section {
 display:flex;
 flex-direction: row-reverse;
 }
-
+/*Container for each text box*/
 article {    
 margin: 25px;
 height: 200px;
@@ -116,6 +114,7 @@ color:rgb(71, 71, 1);
 letter-spacing: 5px;
 margin:0;
 }
+/*Styles the first image in the Accessibility section*/
 .accessibility-img{
    max-width:  75%;
     height: 900px;
@@ -123,6 +122,7 @@ margin:0;
     border-radius: 1em;
     border: var(--border-color);
 }
+/*Styles the placeholder image in More to Come section*/
 .placeholder-img {
 height:200px;
 width:40%;
@@ -130,21 +130,18 @@ border: var(--border-color);
 border-radius: 1em;
 margin: 25px;
 }
-aside {
-border:var(--border-color);
-border-radius: 1em;
-margin:10px;
-}
-#about-me {
-   scroll-behavior:smooth; 
-}
+
+/*Container box for the About Me section*/
 aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border:var(--border-color);
+    border-radius: 1em;
+    margin:10px;
 }
+/*This styles the image in the About Me section*/
 .about-me-img {
     height: auto;
     max-width: 200px;
@@ -163,17 +160,32 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-@media (max-width 1203px) {
+/*These rules apply when the viewers screen is below 1203px*/
+@media screen and (max-width: 1203px ) {
     ul {
     flex-direction: column;
     flex-shrink:0;
     }
 }
-
-@media screen and (max-width 800px) {
+/*These rules apply when the viewers screen is below 800px*/
+@media screen and (max-width: 800px) {
     .accessibility-img {
+        flex-shrink:0;
         height: 200px;
         width: 200px;
+    }
+    p {
+        margin:0;
+        padding:10px;
+    }
+    
+
+/*These rules apply when the users screen is below 644px*/
+@media screen and (max-width: 644px){
+    h2 {
+        font-size:20px;
+    }
+    p{
+        padding:0px;
     }
 }
