@@ -26,14 +26,10 @@ h1 {
     letter-spacing: 5px;
     margin:0;
 }
-
-    
-
 h3 {
     font-family: var(--font);
     color:var(--font-color);
     letter-spacing: 8px;
-    font
 }
 ul {
     left: 20px;
@@ -59,7 +55,11 @@ font-family: var(--font);
 color:var(--font-color);
 letter-spacing: 2px;
 font-weight:800;
+text-align: center;
+}
 
+li:hover {
+    color: yellow;
 }
   
 .background-image {
@@ -162,4 +162,18 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width 1203px) {
+    ul {
+    flex-direction: column;
+    flex-shrink:0;
+    }
+}
+
+@media screen and (max-width 800px) {
+    .accessibility-img {
+        height: 200px;
+        width: 200px;
+    }
 }
