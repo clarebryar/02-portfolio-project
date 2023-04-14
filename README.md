@@ -7,4 +7,4 @@ This page is currently housing my portfolio of work completed thus far. As the c
 
 ![Portfolio Page](./assets/portfolio-screenshot.png)
 
-Link to deployed page: 
+Link to deployed page: https://clarebryar.github.io/02-portfolio-project/
